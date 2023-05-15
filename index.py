@@ -20,7 +20,7 @@ app.layout = html.Div([
               [Input('tabs', 'value')])
 def render_content(tab):
     if tab == 'tab-intro': return intro.layout
-    elif tab == 'tab-predict': return calculator.layout
+    elif tab == 'tab-calculator': return calculator.layout
 
 if __name__ == '__main__':
     app.run_server(debug=True)
