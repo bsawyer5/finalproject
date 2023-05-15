@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 from app import app, server
-from tabs import intro, calculator,
+from tabs import intro, calculator
 
 style = {'maxWidth': '960px', 'margin': 'auto'}
 
