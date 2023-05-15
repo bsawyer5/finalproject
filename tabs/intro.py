@@ -13,8 +13,7 @@ It was collected in response to the need for noninvasive coronary heart disease 
 """),
          
          
-html.Img(src='data/chd.png
-         https://raw.githubusercontent.com/bsawyer5/finalproject/main/data/chd.png'')
+html.Img(src='https://raw.githubusercontent.com/bsawyer5/finalproject/main/data/chd.png'),
          
          
          
