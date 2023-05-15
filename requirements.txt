@@ -1,6 +1,6 @@
 category_encoders==2.6.0
 dash==2.0.0
-gunicorn
+Gunicorn
 matplotlib==3.6.3
 numpy==1.24.3
 pandas==2.0.0
