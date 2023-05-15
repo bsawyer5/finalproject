@@ -17,7 +17,7 @@ app.layout = html.Div([
         Scores range from 0-4 and denote the degree of coronary occlusion, with 0 indicating no occlusion and 4 corresponding to the worst.
     """),
 
-    html.Div(id='prediction-content', style={'fontWeight': 'bold'}),
+    html.Div(id='calculator-content', style={'fontWeight': 'bold'}),
 
 
     html.Div([
@@ -61,7 +61,7 @@ app.layout = html.Div([
 
 
 @app.callback(
-    Output('prediction-content', 'children'),
+    Output('calculator-content', 'children'),
     [Input('chest_pain', 'value'),
      Input('vessel_calcification', 'value'),
      Input('stress_test', 'value')])
