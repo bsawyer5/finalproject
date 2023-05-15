@@ -1,3 +1,13 @@
+from dash.dependencies import Input, Output
+import dash_core_components as dcc
+import dash_html_components as html
+
+from joblib import load
+import numpy as np
+import pandas as pd
+
+from app import app
+
 style = {'padding': '1.5em'}
 
 app.layout = html.Div([
@@ -64,7 +74,7 @@ def predict(chest_pain, vessel_calcification, stress_test):
         data=[[chest_pain, vessel_calcification, stress_test]]
     )
 
-    rfc_pipeline = joblib.load('rfc_pipeline.joblib')
+    rfc_pipeline = joblib.load('model/rfc_pipeline.joblib')
     y_pred_log = rfc_pipeline.predict(df3)
     y_pred = y_pred_log[0]
     results = f'The predicted diagnosis is {y_pred:,.0f}.'
