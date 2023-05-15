@@ -5,6 +5,8 @@ import dash_html_components as html
 from app import app, server
 from tabs import intro, calculator
 
+server = app.server
+
 style = {'maxWidth': '960px', 'margin': 'auto'}
 
 app.layout = html.Div([
