@@ -11,9 +11,9 @@ app.layout = html.Div([
     dcc.Markdown('# Coronary Disease Calculator'),
     dcc.Tabs(id='tabs', value='tab-intro', children=[
         dcc.Tab(label='Intro', value='tab-intro'),
-        dcc.Tab(label='Calculator', value='tab-calculator'),
+        dcc.Tab(label='Calculator', value='tab-calculator')
     ]),
-    html.Div(id='tabs-content'),
+    html.Div(id='tabs-content')
 ], style=style)
 
 @app.callback(Output('tabs-content', 'children'),
